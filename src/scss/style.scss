@@ -1,7 +1,11 @@
-@import 'settings';
+@charset "UTF-8";
 
-h1 {
-    color: $color1;
-    background-color: $color2;
-    padding: 0.5em;
-}
+// Reset
+@import "components/normalise";
+
+// Colour
+@import "components/colour";
+
+// Components
+@import "components/grid";
+@import "components/typography";
