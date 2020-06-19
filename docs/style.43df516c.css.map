@@ -1,0 +1,1 @@
+{"version":3,"sources":["scss/style.scss","scss/_settings.scss"],"names":[],"mappings":"AAEA,GACI,SCHM,CDIN,qBCHM,CDIN","file":"style.43df516c.css","sourceRoot":"../src","sourcesContent":["@import 'settings';\n\nh1 {\n    color: $color1;\n    background-color: $color2;\n    padding: 0.5em;\n}","$color1 : #f00;\n$color2 : #00f;"]}
