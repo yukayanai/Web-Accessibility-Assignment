@@ -1,0 +1,22 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/react
+# Edit at https://www.toptal.com/developers/gitignore?templates=react
+
+### parcel ###
+.cache
+
+pids
+*.pid
+*.seed
+
+### node ###
+node_modules
+.npm
+bower_components
+
+### common ###
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*

@@ -1,0 +1,24 @@
+{
+  "name": "web-accessibility-assignment",
+  "version": "1.0.0",
+  "description": "Web Accessibility Group Assignment",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html --out-dir docs",
+    "build": "parcel build index.html --out-dir docs --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yukayanai/Web-Accessibility-Assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yukayanai/Web-Accessibility-Assignment/issues"
+  },
+  "homepage": "https://github.com/yukayanai/Web-Accessibility-Assignment#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.26.8"
+  }
+}

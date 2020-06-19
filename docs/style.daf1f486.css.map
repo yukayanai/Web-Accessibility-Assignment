@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAEC,GACG,SAFM,CAGN,qBAJM,CAKN","file":"style.daf1f486.css","sourceRoot":"..","sourcesContent":["$color1 : #00f;\n$color2 : #f00;\n h1 {\n    color: $color2;\n    background-color: $color1;\n    padding: 0.5em;\n}"]}
