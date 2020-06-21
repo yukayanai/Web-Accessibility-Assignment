@@ -33,6 +33,14 @@ main, footer {
   padding: 20px;
 }
 
+header {
+  margin-top: 20px;
+  padding: 20px;
+}
+header .wrapper {
+  position: relative;
+  width: 160px;
+}
 header #skip-link {
   position: absolute;
   top: -120%;
@@ -41,36 +49,47 @@ header #skip-link:focus {
   align-items: center;
   justify-content: center;
   top: 0;
-  left: 120%;
-  width: 100%;
-  outline: solid 1px #9e005d;
-  padding: 0.2em;
-  margin-top: 0.1em;
+  left: 150%;
+  width: 170px;
+  outline: solid 2px #9e005d;
+  padding: 4px;
   display: flex;
 }
-
-nav ul[role=menubar] {
-  margin: 10px;
-  padding: 10px;
+header nav #hamburger {
+  color: #FFFFFF;
+  background-color: #9e005d;
+  font-size: 2rem;
+  border: none;
+  padding: 3px 6px 2px 6px;
+}
+header nav ul[role=menubar] {
   font-size: 1.15rem;
-  list-style: none;
-}
-nav ul[role=menubar] a[role=menuitem] {
-  text-decoration: none;
-}
-nav ul[role=menubar] [role=menuitem] {
-  padding: 0.25em;
-}
-nav ul[role=menubar] li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-nav ul[role=menubar] > li {
+header nav ul[role=menubar] a {
+  text-decoration: none;
+  color: #343434;
+  margin-left: 15px;
+}
+header nav ul[role=menubar] a i {
+  font-size: 0.8em;
+  padding-left: 5px;
+}
+header nav ul[role=menubar] [role=menuitem] {
+  padding: 0.25em;
+}
+header nav ul[role=menubar] li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav ul[role=menubar] > li {
   display: inline;
   position: relative;
 }
-nav ul[role=menubar] ul {
+header nav ul[role=menubar] ul {
   position: absolute;
   display: none;
   left: 0;
@@ -105,6 +124,43 @@ section {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+/* Desktop */
+@media only screen and (min-width: 992px) {
+  header nav {
+    margin: 50px 0 0 0;
+  }
+  header nav #hamburger {
+    display: none;
+  }
+}
+/* Tablet */
+@media only screen and (max-width: 992px) {
+  header {
+    margin-top: 0;
+  }
+  header #skip-link {
+    display: none;
+  }
+  header .wrapper .logo a img {
+    height: 80px;
+  }
+  header nav {
+    margin: 20px 0 0 0;
+  }
+  header nav ul.main-nav {
+    display: none;
+  }
+  header nav #hamburger {
+    display: initial;
+  }
+}
+/* Mobile */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .grid-container {
@@ -157,6 +213,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.85rem;
+  margin: 0;
 }
 
 h2 {
@@ -186,11 +243,11 @@ footer h2 {
 p {
   color: #343434;
   font-size: 1em;
-  line-height: 1.35em;
+  line-height: 1.4em;
 }
 
 ul li {
-  line-height: 1.35em;
+  line-height: 1.4em;
 }
 
 .fas {
