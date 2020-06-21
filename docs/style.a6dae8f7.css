@@ -12,137 +12,146 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
 }
 
 article,
 footer,
 header,
+main,
 nav,
 section {
   display: block;
 }
 
-.row::after {
-  content: "";
-  clear: both;
+header, main, footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main, footer {
+  padding: 20px;
+}
+
+header #skip-link {
+  position: absolute;
+  top: -120%;
+}
+header #skip-link:focus {
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 120%;
+  width: 100%;
+  outline: solid 1px #9e005d;
+  padding: 0.2em;
+  margin-top: 0.1em;
+  display: flex;
+}
+
+nav ul[role=menubar] {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.15rem;
+  list-style: none;
+}
+nav ul[role=menubar] a[role=menuitem] {
+  text-decoration: none;
+}
+nav ul[role=menubar] [role=menuitem] {
+  padding: 0.25em;
+}
+nav ul[role=menubar] li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul[role=menubar] > li {
+  display: inline;
+  position: relative;
+}
+nav ul[role=menubar] ul {
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 20px;
+  z-index: 0;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+footer ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+.sitemap, .copyright, .contact {
+  margin-bottom: 20px;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 30px;
+}
+.grid-container article {
+  position: relative;
   display: block;
 }
 
-[class*=col-] {
-  float: left;
-  padding: 15px;
+footer .sitemap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 20px;
+}
+footer .contact {
+  display: grid;
+  grid-gap: 20px;
+}
+footer .contact .footer-links {
+  position: relative;
+  display: block;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   /* Grid for desktop */
-  .col-1 {
-    width: 8.33%;
-  }
-
-  .col-2 {
-    width: 16.66%;
-  }
-
-  .col-3 {
-    width: 25%;
-  }
-
-  .col-4 {
-    width: 33.33%;
-  }
-
-  .col-5 {
-    width: 41.66%;
-  }
-
-  .col-6 {
-    width: 50%;
-  }
-
-  .col-7 {
-    width: 58.33%;
-  }
-
-  .col-8 {
-    width: 66.66%;
-  }
-
-  .col-9 {
-    width: 75%;
-  }
-
-  .col-10 {
-    width: 83.33%;
-  }
-
-  .col-11 {
-    width: 91.66%;
-  }
-
-  .col-12 {
-    width: 100%;
+  footer .contact {
+    grid-template-columns: 570px auto auto;
   }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 992px) {
   /* Grid for tablets */
-  .col-s-1 {
-    width: 8.33%;
-  }
-
-  .col-s-2 {
-    width: 16.66%;
-  }
-
-  .col-s-3 {
-    width: 25%;
-  }
-
-  .col-s-4 {
-    width: 33.33%;
-  }
-
-  .col-s-5 {
-    width: 41.66%;
-  }
-
-  .col-s-6 {
-    width: 50%;
-  }
-
-  .col-s-7 {
-    width: 58.33%;
-  }
-
-  .col-s-8 {
-    width: 66.66%;
-  }
-
-  .col-s-9 {
-    width: 75%;
-  }
-
-  .col-s-10 {
-    width: 83.33%;
-  }
-
-  .col-s-11 {
-    width: 91.66%;
-  }
-
-  .col-s-12 {
-    width: 100%;
+  footer .contact {
+    grid-template-columns: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
   /* Grid for mobile phones */
-  [class*=col-] {
-    width: 100%;
+  footer .contact {
+    grid-template-columns: 100%;
   }
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.1;
   color: #9e005d;
 }
 
@@ -170,28 +179,41 @@ h6 {
   font-size: 1.15rem;
 }
 
+footer h2 {
+  font-size: 1.65rem;
+}
+
 p {
   color: #343434;
   font-size: 1em;
+  line-height: 1.35em;
 }
 
-.far, .fab {
+ul li {
+  line-height: 1.35em;
+}
+
+.fas {
   font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
 
 .fab {
   font-family: "Font Awesome 5 Brands";
 }
 
-.far, .fab {
-  font-style: normal;
+.fas, .fab {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
+  font-style: normal;
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
-  font-weight: 400;
+}
+
+footer .footer-links i {
+  font-size: 2.6em;
 }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen

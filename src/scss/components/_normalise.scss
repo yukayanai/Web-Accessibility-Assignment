@@ -11,13 +11,23 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
 }
 
 article,
 footer,
 header,
+main,
 nav,
 section {
   display: block;
+}
+
+header, main, footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main, footer {
+  padding: 20px;
 }
