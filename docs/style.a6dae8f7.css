@@ -62,34 +62,34 @@ header nav #hamburger {
   border: none;
   padding: 3px 6px 2px 6px;
 }
-header nav ul[role=menubar] {
+header nav ul {
   font-size: 1.15rem;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-header nav ul[role=menubar] a {
+header nav ul a {
   text-decoration: none;
   color: #343434;
   margin-left: 15px;
 }
-header nav ul[role=menubar] a i {
+header nav ul a i {
   font-size: 0.8em;
   padding-left: 5px;
 }
-header nav ul[role=menubar] [role=menuitem] {
+header nav ul [role=menuitem] {
   padding: 0.25em;
 }
-header nav ul[role=menubar] li {
+header nav ul li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-header nav ul[role=menubar] > li {
+header nav ul > li {
   display: inline;
   position: relative;
 }
-header nav ul[role=menubar] ul {
+header nav ul ul {
   position: absolute;
   display: none;
   left: 0;
@@ -149,7 +149,7 @@ section {
   header nav {
     margin: 20px 0 0 0;
   }
-  header nav ul.main-nav {
+  header nav ul {
     display: none;
   }
   header nav #hamburger {
