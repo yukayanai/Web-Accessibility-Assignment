@@ -81,6 +81,25 @@ header {
 
 // Footer
 footer {
+    background-color: $secondary-colour3;
+    width: 100%;
+
+    > * {
+        color: $white;
+    }
+
+    p, h2 {
+        color: $white;
+    }
+
+    a {
+        color: $white;
+    }
+
+    .footer-links a {
+        text-decoration: none;
+    }
+
     ul {
         padding: 0;
         margin: 0;
@@ -96,6 +115,30 @@ footer {
 // Content
 section {
     margin-bottom: 60px;
+}
+
+article {
+    h3 {
+        a {
+            text-decoration: none;
+            color: $primary-colour;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .topic-pill {
+        font-size: 0.875em;
+        padding: 0.6em;
+        background-color: $secondary-colour2;
+        border-radius: 0.6em;
+        text-decoration: none;
+        color: $white;
+    }
+    .author {
+        margin-top: 20px;
+    }
 }
 
 .sitemap, .copyright, .contact {
@@ -122,6 +165,14 @@ section {
 
             #hamburger {
                 display: none;
+            }
+        }
+    }
+
+    footer {
+        .copyright {
+            .pull-right {
+               text-align: right;
             }
         }
     }

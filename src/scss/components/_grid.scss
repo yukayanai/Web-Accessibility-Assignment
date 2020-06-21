@@ -31,13 +31,20 @@ footer {
             display: block;
         }
     }
+
+    .copyright {
+        display: grid;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     /* Grid for desktop */
     footer {
         .contact {
-            grid-template-columns: 570px auto auto;
+            grid-template-columns: 50% 25% 25%;
+        }
+        .copyright {
+            grid-template-columns: 50% 50%;
         }
     }
 }
