@@ -37,3 +37,24 @@ p {
     color: $black;
     font-size: 1em;
 }
+
+// Icons
+
+.far, .fab {
+    font-family: 'Font Awesome 5 Free';
+}
+
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.far, .fab {
+    font-style: normal;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-weight: 400;
+}
