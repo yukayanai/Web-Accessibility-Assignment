@@ -62,39 +62,68 @@ header nav #hamburger {
   border: none;
   padding: 3px 6px 2px 6px;
 }
-header nav ul {
-  font-size: 1.15rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+header nav .nav {
+  float: left;
+  margin: 20px 0;
 }
-header nav ul a {
-  text-decoration: none;
-  color: #343434;
-  margin-left: 15px;
+header nav .nav ul {
+  position: absolute;
+  top: 2.6em;
+  left: -9999px;
+  opacity: 0;
+  transition: 0.1s linear opacity;
+  min-width: 200px;
 }
-header nav ul a i {
-  font-size: 0.8em;
-  padding-left: 5px;
-}
-header nav ul [role=menuitem] {
-  padding: 0.25em;
-}
-header nav ul li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-header nav ul > li {
-  display: inline;
+header nav .nav li {
+  float: left;
   position: relative;
 }
-header nav ul ul {
-  position: absolute;
-  display: none;
+header nav .nav li i {
+  font-size: 0.85em;
+  padding-left: 6px;
+}
+header nav .nav li > a {
+  float: left;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #343434;
+}
+header nav .nav li > a:hover, header nav .nav li > a:focus {
+  background: #9e005d;
+  color: #FFFFFF;
+  outline: 0;
+}
+header nav .nav li:hover > a, header nav .nav li:focus > a {
+  background: #9e005d;
+  color: #FFFFFF;
+  outline: 0;
+}
+header nav .nav li:hover ul, header nav .nav li:focus ul {
   left: 0;
-  top: 20px;
-  z-index: 0;
+  opacity: 0.99;
+}
+header nav .nav li ul.show-menu {
+  left: 0;
+  opacity: 0.99;
+}
+header nav .nav li ul li {
+  float: none;
+  position: static;
+  background-color: #F9F9F9;
+}
+header nav .nav li ul a {
+  float: none;
+  display: block;
+  text-shadow: none;
+  transition: 0.1s linear all;
+}
+header nav .nav li ul a:hover, header nav .nav li ul a:focus {
+  text-shadow: none;
+}
+header nav .list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 footer {

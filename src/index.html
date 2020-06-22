@@ -14,50 +14,50 @@
                 <a id="skip-link" href="#main">Skip to main content</a>
                 <div class="logo"><a href="#" aria-current=”page”><img src="img/Plumtree-logo.png" alt="Home Plumtree Logo"></a></div>
             </div>
-            <nav aria-label="Main">
+            <nav class="menu" id="nav-menu" role="navigation" aria-label="Main menu">
                 <button id="hamburger" aria-label="Main Menu"><i class="fas fa-bars"></i></button>
-                <ul id ="main-nav" role="menubar">
-                    <li class="main-nav-item" role="none">
-                        <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">Plumtree House <i class="fas fa-chevron-down"></i></a>
-                        <ul>
-                            <li role="none"><a href="#">What we do</a></li>
-                            <li role="none"><a href="#">NDIS</a></li>
-                            <li role="none"><a href="#">Our Approach</a></li>
-                            <li role="none"><a href="#">Services</a></li>
-                            <li role="none"><a href="#">Calendar</a></li>
-                            <li role="none"><a href="#">Playgroups</a></li>
+                <ul class="nav level-1 list-reset" role="menubar" aria-hidden="false">
+                    <li class="has-subnav" role="menuitem" aria-haspopup="true">
+                        <a href="#">Plumtree House <i class="fas fa-chevron-down"></i></a>
+                        <ul class="level-2 list-reset" data-test="true" aria-hidden="true" role="menu">
+                            <li role="menuitem"><a href="#" tabindex="-1">What we do</a></li>
+                            <li role="menuitem"><a href="#" tabindex="-1">NDIS</a></li>
+                            <li role="menuitem"><a href="#" tabindex="-1">Our Approach</a></li>
+                            <li role="menuitem"><a href="#" tabindex="-1">Services</a></li>
+                            <li role="menuitem"><a href="#" tabindex="-1">Calendar</a></li>
+                            <li role="menuitem"><a href="#" tabindex="-1">Playgroups</a></li>
                         </ul>
                     </li>
-                    <li class="main-nav-item" role="none">
-                        <a href="#" role="menuitem" aria-haspopup="true"aria-expanded="false">Plumtree Community <i class="fas fa-chevron-down"></i></a>
-                        <ul>
-                            <li role="none"><a href="#">Now & Next</a></li>
-                            <li role="none"><a href="#">Pictability</a></li>
-                            <li role="none"><a href="#">Family Conference</a></li>
-                            <li role="none"><a href="#">Peer Work</a></li>
+                    <li role="menuitem" aria-haspopup="true">
+                        <a href="#">Plumtree Community <i class="fas fa-chevron-down"></a>
+                        <ul class="level-2 list-reset" data-test="true" aria-hidden="true" role="menu" class="list-reset">
+                            <li role="menuitem"><a href="#" tabindex="-1">Now & Next</a></li>
+                            <li role="menuitem"><a href="#" tabindex="-1">Pictability</a></li>
+                            <li role="menuitem"><a href="#" tabindex="-1">Family Conference</a></li>
+                            <li role="menuitem"><a href="#" tabindex="-1">Peer Work</a></li>
                         </ul>
                     </li>
-                    <li class="main-nav-item" role="none">
-                        <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">Plumtree Professional <i class="fas fa-chevron-down"></i></a>
-                        <ul>
-                            <li role="none"><a href="#">Pictability</a></li>
-                            <li role="none"><a href="#">Now & Next</a></li>
-                            <li role="none"><a href="#">Training on Demand</a></li>
-                            <li role="none"><a href="#">Contact Us</a></li>
+                    <li role="menuitem" aria-haspopup="true">
+                        <a href="#">Plumtree Professional <i class="fas fa-chevron-down"></i></a>
+                        <ul class="level-2 list-reset" data-test="true" aria-hidden="true" role="menu" class="list-reset">
+                            <li role="menuitem"><a href="#" tabindex="-1">Pictability</a></li>
+                            <li role="menuitem"><a href="#" tabindex="-1">Now & Next</a></li>
+                            <li role="menuitem"><a href="#" tabindex="-1">Training on Demand</a></li>
+                            <li role="menuitem"><a href="#" tabindex="-1">Contact Us</a></li>
                         </ul>
                     </li>
-                    <li class="main-nav-item" role="none">
-                        <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">About us <i class="fas fa-chevron-down"></i></a>
-                        <ul>
-                            <li role="none"><a href="#">Our Team</a></li>
-                            <li role="none"><a href="#">Our Board</a></li>
-                            <li role="none"><a href="#">Values and Culture</a></li>
-                            <li role="none"><a href="#">Covid-19</a></li>
+                    <li role="menuitem" aria-haspopup="true">
+                        <a href="#">About us <i class="fas fa-chevron-down"></i></a>
+                        <ul class="level-2 list-reset" data-test="true" aria-hidden="true" role="menu" class="list-reset">
+                            <li role="menuitem"><a href="#" tabindex="-1">Our Team</a></li>
+                            <li role="menuitem"><a href="#" tabindex="-1">Our Board</a></li>
+                            <li role="menuitem"><a href="#" tabindex="-1">Values and Culture</a></li>
+                            <li role="menuitem"><a href="#" tabindex="-1">Covid-19</a></li>
                         </ul>
                     </li>
-                    <li class="main-nav-item"><a href="#" role="menuitem" aria-haspopup="false">Blog</a></li>
-                    <li class="main-nav-item"><a href="#" role="menuitem" aria-haspopup="false">Contact Us</a></li>
-                </ul>
+                    <li><a href="#" role="menuitem" aria-haspopup="false">Blog</a></li>
+                    <li><a href="#" role="menuitem" aria-haspopup="false">Contact Us</a></li>
+                </ul>	
             </nav>
         </header>
         <main id="main">
@@ -166,7 +166,7 @@
         </main>
         <footer>
             <div class="footer-wrapper">
-                <div class="sitemap">
+                <nav aria-labelledby="Footer links" class="sitemap">
                     <div class="footer-links">
                         <h2><a href="#">Plumtree House</a></h2>
                         <ul>
@@ -205,7 +205,7 @@
                             <li><a href="#">Covid-19</a></li>
                         </ul>
                     </div>
-                </div>
+                </nav>
                 <div class="contact">
                     <div class="footer-links">
                         <h2>Acknowledgement</h2>
