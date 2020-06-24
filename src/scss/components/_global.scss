@@ -6,6 +6,13 @@ header {
     .wrapper {
         position: relative;
         width: 160px;
+
+        a {
+            &:focus {
+                outline: 3px solid $focus-blue;
+                outline-offset: 4px;
+            }
+        }
     }
 
     // Skip Link
@@ -24,101 +31,94 @@ header {
             display: flex;
         }
     }
+}
 
-    // Navigation
-    nav {
-        #hamburger {
-            color: $white;
-            background-color: $primary-colour;  
-            font-size: 2rem;
-            border: none;
-            padding: 3px 6px 2px 6px;
-        }
+// Navigation
+nav {
+    #hamburger {
+        color: $white;
+        background-color: $primary-colour;  
+        font-size: 2rem;
+        border: none;
+        padding: 3px 6px 2px 6px;
+    }
 
-        .nav {
+    .nav {
+        margin: 20px 0 0 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.18em;
+        font-weight: 700;
+
+        li {
             float: left;
-            margin: 20px 0;
 
-            ul {
-                position: absolute;
-                top: 2.6em;
-                left: -9999px;
-                opacity: 0;
-                transition: 0.1s linear opacity;
-                min-width: 200px;
+            i {
+                font-size: 0.85em;
+                padding-left: 6px;
             }
 
-            li {
-                float: left;
-                position: relative;
-
-                i {
-                    font-size: 0.85em;
-                    padding-left: 6px;
-                }
-
-                > a {
-                    float: left;
-                    padding: 10px 15px;
-                    text-decoration: none;
-                    color: $black;
-
-                    &:hover,
-                    &:focus {
-                        background: $primary-colour;
-                        color: $white;
-                        outline: 0;
-                    }
-                }
+            > a {
+                padding: 10px 15px;
+                text-decoration: none;
+                color: $black;
 
                 &:hover,
                 &:focus {
-                    > a {
-                        background: $primary-colour;
-                        color: $white;
-                        outline: 0;
-                    }
+                    background: $primary-colour;
+                    color: $white;
+                    outline: 0;
+                }
+            }
 
-                    ul {
-                        left: 0;
-                        opacity: 0.99;
-                    }
+            &:hover,
+            &:focus {
+                > a {
+                    background: $primary-colour;
+                    color: $white;
+                    outline: 0;
                 }
 
                 ul {
-                    &.show-menu {
-                        left: 0;
-                        opacity: 0.99;
-                    }
+                    left: 0;
+                    opacity: 0.99;
+                }
+            }
 
-                    li {
-                        float: none;
-                        position: static;
-                        background-color: $light-grey;
-                    }
+            ul {
+                &.show-menu {
+                    left: 0;
+                    opacity: 0.99;
+                }
 
-                    a {
-                        float: none;
-                        display: block;
+                li {
+                    float: none;
+                    position: static;
+                    background-color: $light-grey;
+                }
+
+                a {
+                    float: none;
+                    display: block;
+                    text-shadow: none;
+                    transition: 0.1s linear all;
+
+                    &:hover,
+                    &:focus {
                         text-shadow: none;
-                        transition: 0.1s linear all;
-
-                        &:hover,
-                        &:focus {
-                            text-shadow: none;
-                        }
                     }
                 }
             }
         }
-        
-        .list-reset {  
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
     }
-
+    
+    .list-reset {  
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 }
 
 // Footer
@@ -135,11 +135,17 @@ footer {
     }
 
     a {
-        color: $white;
-    }
-
-    .footer-links a {
         text-decoration: none;
+        color: $white;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:focus {
+            outline: 3px solid $white;
+            outline-offset: 4px;
+        }
     }
 
     ul {
@@ -152,65 +158,169 @@ footer {
             padding: 0;
         }
     }
+
+    .contact {
+        .connect {
+            ul {
+                li {
+                    display: inline;
+                    padding-right: 10px;
+
+                    a {
+                        &:hover, &:focus {
+                            i {
+                                color: $grey;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
 
 // Content
-section {
-    margin-bottom: 60px;
-}
+main {
+    a {
+        text-decoration: none;
 
-article {
-    h3 {
-        a {
-            text-decoration: none;
-            color: $primary-colour;
+        &:hover {
+            text-decoration: underline;
+        }
 
-            &:hover {
-                text-decoration: underline;
-            }
+        &:focus {
+            outline: 3px solid $focus-blue;
+            outline-offset: 4px;
         }
     }
-    .topic-pill {
-        font-size: 0.875em;
-        padding: 0.6em;
-        background-color: $secondary-colour2;
-        border-radius: 0.6em;
-        text-decoration: none;
+    .btn-primary {
+        background-color: $primary-colour;
+        border: 3px solid $primary-colour;
         color: $white;
-    }
-    .author {
-        margin-top: 20px;
-    }
-}
+        font-size: 1.15em;
+        font-weight: 700;
+        display: inline-block;
+        text-align: center;
+        border-radius: 2px;
+        white-space: nowrap;
+        vertical-align: middle;
+        padding: 16px;
 
-.sitemap, .copyright, .contact {
-    margin-bottom: 20px;
-}
+        &:hover, &:focus {
+            background-color: $white;
+            color: $secondary-colour3;
+            border: 3px solid $secondary-colour3;
+            text-decoration: none;
+        }
+    }
+    .cta {
+        padding-bottom: 60px;
+    }
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .bg-image {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        min-height: 400px;
+        align-items: center;
+        justify-content: center;
 
-// Screen reader only
-.sr-only {
-    border: 0;
-    clip: rect(0,0,0,0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+        h2 {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cta {
+            text-align: center;
+        }
+
+        .image-header {
+            background-color: $white;
+            border: 1px solid $grey;
+            padding: 40px 20px;
+            width: 60%;
+            margin: 0 auto;
+            z-index: 1;
+            text-align: center;
+        }
+    }
+
+    .welcome {
+        .bg-image {
+            padding: 140px 0;
+        }
+    }
+    #hero {
+        background-image: url("../img/Plumtree-hero-image.jpg");
+    }
+
+    #bg-help, #bg-blog {
+        background-image: url("../img/Plumtree-bg-image.jpg");
+    }
+    article {
+        background-color: $white;
+        padding: 0 20px 30px 20px;
+
+        h3 {
+            a {
+                text-decoration: none;
+                color: $primary-colour;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .topic-pill {
+            font-size: 0.875em;
+            padding: 0.6em;
+            background-color: $secondary-colour2;
+            border-radius: 0.6em;
+            text-decoration: none;
+            color: $white;
+        }
+        .author {
+            margin-top: 20px;
+        }
+    }
+    
+    .sitemap, .copyright, .contact {
+        margin-bottom: 20px;
+    }
+    
+    // Screen reader only
+    .sr-only {
+        border: 0;
+        clip: rect(0,0,0,0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    
 }
 
 /* Desktop */
 @media only screen and (min-width: 992px) {
-    header {
-        nav {
-            margin: 50px 0 0 0;
+    nav {
+        margin: 40px 0;
 
-            #hamburger {
-                display: none;
-            }
+        #hamburger {
+            display: none;
         }
     }
-
+    main {
+        h2 {
+            text-align: center;
+            padding: 50px 0 60px 0;
+        }
+    }
     footer {
         .copyright {
             .pull-right {
@@ -235,15 +345,36 @@ article {
                 }
             }
         }
-        nav {
-            margin: 20px 0 0 0;
+    }
 
-            ul {
-                display: none;
+    main {
+        h2 {
+            text-align: left;
+            padding: 30px 20px;
+        }
+        .welcome {
+            .bg-image {
+                padding: 0;
+    
+                .image-header {
+                    background-color: $white;
+                    border: none;
+                    padding: 60px 40px;
+                    width: 100%;
+                    margin: 0 auto;
+                }
             }
-            #hamburger {
-                display: initial;
-            }
+        }
+    }
+
+    nav {
+        margin: 20px 0 0 0;
+
+        .nav {
+            display: none;
+        }
+        #hamburger {
+            display: initial;
         }
     }
 }

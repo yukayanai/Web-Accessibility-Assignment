@@ -23,11 +23,11 @@ section {
   display: block;
 }
 
-header, main, .footer-wrapper {
+header, .footer-wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-main, footer {
+footer {
   padding: 20px;
 }

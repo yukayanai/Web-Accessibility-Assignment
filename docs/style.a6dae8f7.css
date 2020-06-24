@@ -24,12 +24,12 @@ section {
   display: block;
 }
 
-header, main, .footer-wrapper {
+header, .footer-wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-main, footer {
+footer {
   padding: 20px;
 }
 
@@ -40,6 +40,10 @@ header {
 header .wrapper {
   position: relative;
   width: 160px;
+}
+header .wrapper a:focus {
+  outline: 3px solid #005FCC;
+  outline-offset: 4px;
 }
 header #skip-link {
   position: absolute;
@@ -55,72 +59,68 @@ header #skip-link:focus {
   padding: 4px;
   display: flex;
 }
-header nav #hamburger {
+
+nav #hamburger {
   color: #FFFFFF;
   background-color: #9e005d;
   font-size: 2rem;
   border: none;
   padding: 3px 6px 2px 6px;
 }
-header nav .nav {
+nav .nav {
+  margin: 20px 0 0 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.18em;
+  font-weight: 700;
+}
+nav .nav li {
   float: left;
-  margin: 20px 0;
 }
-header nav .nav ul {
-  position: absolute;
-  top: 2.6em;
-  left: -9999px;
-  opacity: 0;
-  transition: 0.1s linear opacity;
-  min-width: 200px;
-}
-header nav .nav li {
-  float: left;
-  position: relative;
-}
-header nav .nav li i {
+nav .nav li i {
   font-size: 0.85em;
   padding-left: 6px;
 }
-header nav .nav li > a {
-  float: left;
+nav .nav li > a {
   padding: 10px 15px;
   text-decoration: none;
   color: #343434;
 }
-header nav .nav li > a:hover, header nav .nav li > a:focus {
+nav .nav li > a:hover, nav .nav li > a:focus {
   background: #9e005d;
   color: #FFFFFF;
   outline: 0;
 }
-header nav .nav li:hover > a, header nav .nav li:focus > a {
+nav .nav li:hover > a, nav .nav li:focus > a {
   background: #9e005d;
   color: #FFFFFF;
   outline: 0;
 }
-header nav .nav li:hover ul, header nav .nav li:focus ul {
+nav .nav li:hover ul, nav .nav li:focus ul {
   left: 0;
   opacity: 0.99;
 }
-header nav .nav li ul.show-menu {
+nav .nav li ul.show-menu {
   left: 0;
   opacity: 0.99;
 }
-header nav .nav li ul li {
+nav .nav li ul li {
   float: none;
   position: static;
   background-color: #F9F9F9;
 }
-header nav .nav li ul a {
+nav .nav li ul a {
   float: none;
   display: block;
   text-shadow: none;
   transition: 0.1s linear all;
 }
-header nav .nav li ul a:hover, header nav .nav li ul a:focus {
+nav .nav li ul a:hover, nav .nav li ul a:focus {
   text-shadow: none;
 }
-header nav .list-reset {
+nav .list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -137,10 +137,15 @@ footer p, footer h2 {
   color: #FFFFFF;
 }
 footer a {
+  text-decoration: none;
   color: #FFFFFF;
 }
-footer .footer-links a {
-  text-decoration: none;
+footer a:hover {
+  text-decoration: underline;
+}
+footer a:focus {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 4px;
 }
 footer ul {
   padding: 0;
@@ -151,19 +156,95 @@ footer ul li {
   margin: 0;
   padding: 0;
 }
-
-section {
-  margin-bottom: 60px;
+footer .contact .connect ul li {
+  display: inline;
+  padding-right: 10px;
+}
+footer .contact .connect ul li a:hover i, footer .contact .connect ul li a:focus i {
+  color: #BFBFBF;
 }
 
-article h3 a {
+main a {
+  text-decoration: none;
+}
+main a:hover {
+  text-decoration: underline;
+}
+main a:focus {
+  outline: 3px solid #005FCC;
+  outline-offset: 4px;
+}
+main .btn-primary {
+  background-color: #9e005d;
+  border: 3px solid #9e005d;
+  color: #FFFFFF;
+  font-size: 1.15em;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  border-radius: 2px;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 16px;
+}
+main .btn-primary:hover, main .btn-primary:focus {
+  background-color: #FFFFFF;
+  color: #470028;
+  border: 3px solid #470028;
+  text-decoration: none;
+}
+main .cta {
+  padding-bottom: 60px;
+}
+main .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .bg-image {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+main .bg-image h2 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .bg-image .cta {
+  text-align: center;
+}
+main .bg-image .image-header {
+  background-color: #FFFFFF;
+  border: 1px solid #BFBFBF;
+  padding: 40px 20px;
+  width: 60%;
+  margin: 0 auto;
+  z-index: 1;
+  text-align: center;
+}
+main .welcome .bg-image {
+  padding: 140px 0;
+}
+main #hero {
+  background-image: url("/Plumtree-hero-image.350f378d.jpg");
+}
+main #bg-help, main #bg-blog {
+  background-image: url("/Plumtree-bg-image.accd007a.jpg");
+}
+main article {
+  background-color: #FFFFFF;
+  padding: 0 20px 30px 20px;
+}
+main article h3 a {
   text-decoration: none;
   color: #9e005d;
 }
-article h3 a:hover {
+main article h3 a:hover {
   text-decoration: underline;
 }
-article .topic-pill {
+main article .topic-pill {
   font-size: 0.875em;
   padding: 0.6em;
   background-color: #A62811;
@@ -171,15 +252,13 @@ article .topic-pill {
   text-decoration: none;
   color: #FFFFFF;
 }
-article .author {
+main article .author {
   margin-top: 20px;
 }
-
-.sitemap, .copyright, .contact {
+main .sitemap, main .copyright, main .contact {
   margin-bottom: 20px;
 }
-
-.sr-only {
+main .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
@@ -192,11 +271,16 @@ article .author {
 
 /* Desktop */
 @media only screen and (min-width: 992px) {
-  header nav {
-    margin: 50px 0 0 0;
+  nav {
+    margin: 40px 0;
   }
-  header nav #hamburger {
+  nav #hamburger {
     display: none;
+  }
+
+  main h2 {
+    text-align: center;
+    padding: 50px 0 60px 0;
   }
 
   footer .copyright .pull-right {
@@ -214,13 +298,29 @@ article .author {
   header .wrapper .logo a img {
     height: 80px;
   }
-  header nav {
+
+  main h2 {
+    text-align: left;
+    padding: 30px 20px;
+  }
+  main .welcome .bg-image {
+    padding: 0;
+  }
+  main .welcome .bg-image .image-header {
+    background-color: #FFFFFF;
+    border: none;
+    padding: 60px 40px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  nav {
     margin: 20px 0 0 0;
   }
-  header nav ul {
+  nav .nav {
     display: none;
   }
-  header nav #hamburger {
+  nav #hamburger {
     display: initial;
   }
 }
@@ -231,12 +331,15 @@ header {
   justify-content: space-between;
 }
 
-.grid-container {
+main .grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-gap: 30px;
+  padding-bottom: 60px;
 }
-.grid-container article {
+main .grid-container article {
   position: relative;
   display: block;
 }
@@ -292,6 +395,7 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
+  margin: 0;
 }
 
 h3 {
@@ -308,10 +412,6 @@ h5 {
 
 h6 {
   font-size: 1.15rem;
-}
-
-footer h2 {
-  font-size: 1.65rem;
 }
 
 p {
@@ -344,8 +444,15 @@ ul li {
   line-height: 1;
 }
 
-footer .footer-links i {
-  font-size: 2.6em;
+footer h2 {
+  margin: 25px 0;
+  font-size: 1.25em;
+}
+footer p {
+  margin: 16px 0 0 0;
+}
+footer .connect i {
+  font-size: 2.4em;
 }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen

@@ -4,14 +4,19 @@ header {
     justify-content: space-between;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    grid-gap: 30px;
+main {
+    .grid-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        grid-gap: 30px;
+        padding-bottom: 60px;
 
-    article {
-        position: relative;
-        display: block;
+        article {
+            position: relative;
+            display: block;
+        }
     }
 }
 
