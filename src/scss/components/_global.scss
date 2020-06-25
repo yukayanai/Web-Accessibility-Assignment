@@ -224,6 +224,31 @@ main {
             margin-top: 20px;
         }
     }
+
+    .explore-ph {
+        background-color: $secondary-color4;
+    }
+
+    .explore-pc {
+        background-color: $secondary-colour1;
+    }
+
+    .explore-pp {
+        background-color: $secondary-colour2;
+    }
+
+    .explore-ph, .explore-pc, .explore-pp {
+        padding: 30px 20px 0 20px;
+        text-align: center;
+
+        img {
+            height: 120px;
+        }
+
+        p, h3 {
+            color: $white;
+        }
+    }
     
     .sitemap, .copyright, .contact {
         margin-bottom: 20px;
@@ -254,22 +279,44 @@ main {
     }
     .btn-primary {
         background-color: $primary-colour;
-        border: 3px solid $primary-colour;
+        border: 2px solid $primary-colour;
         color: $white;
         font-size: 1.15em;
-        font-weight: 700;
         display: inline-block;
         text-align: center;
         border-radius: 2px;
         white-space: nowrap;
         vertical-align: middle;
-        padding: 16px;
+        padding: 10px 16px;
 
         &:hover, &:focus {
             background-color: $white;
             color: $secondary-colour3;
-            border: 3px solid $secondary-colour3;
+            border: 2px solid $secondary-colour3;
             text-decoration: none;
+            outline: 3px solid $focus-blue;
+        }
+    }
+
+    .btn-secondary {
+        background-color: none;
+        border: 2px solid $white;
+        color: $white;
+        font-size: 1.15em;
+        display: inline-block;
+        text-align: center;
+        border-radius: 2px;
+        white-space: nowrap;
+        vertical-align: middle;
+        padding: 10px 16px;
+        margin-top: 30px;
+
+        &:hover, &:focus {
+            background-color: $white;
+            color: $secondary-colour3;
+            border: 2px solid $white;
+            text-decoration: none;
+            outline: 3px solid $black;
         }
     }
     .cta {

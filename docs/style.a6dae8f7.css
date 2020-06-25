@@ -189,13 +189,32 @@ main article h3 a:hover {
 main article .topic-pill {
   font-size: 0.875em;
   padding: 0.6em;
-  background-color: #A62811;
+  background-color: #DD3113;
   border-radius: 0.6em;
   text-decoration: none;
   color: #FFFFFF;
 }
 main article .author {
   margin-top: 20px;
+}
+main .explore-ph {
+  background-color: #D21D84;
+}
+main .explore-pc {
+  background-color: #007AB8;
+}
+main .explore-pp {
+  background-color: #DD3113;
+}
+main .explore-ph, main .explore-pc, main .explore-pp {
+  padding: 30px 20px 0 20px;
+  text-align: center;
+}
+main .explore-ph img, main .explore-pc img, main .explore-pp img {
+  height: 120px;
+}
+main .explore-ph p, main .explore-ph h3, main .explore-pc p, main .explore-pc h3, main .explore-pp p, main .explore-pp h3 {
+  color: #FFFFFF;
 }
 main .sitemap, main .copyright, main .contact {
   margin-bottom: 20px;
@@ -222,22 +241,42 @@ main a:focus {
 }
 main .btn-primary {
   background-color: #9e005d;
-  border: 3px solid #9e005d;
+  border: 2px solid #9e005d;
   color: #FFFFFF;
   font-size: 1.15em;
-  font-weight: 700;
   display: inline-block;
   text-align: center;
   border-radius: 2px;
   white-space: nowrap;
   vertical-align: middle;
-  padding: 16px;
+  padding: 10px 16px;
 }
 main .btn-primary:hover, main .btn-primary:focus {
   background-color: #FFFFFF;
   color: #470028;
-  border: 3px solid #470028;
+  border: 2px solid #470028;
   text-decoration: none;
+  outline: 3px solid #005FCC;
+}
+main .btn-secondary {
+  background-color: none;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 1.15em;
+  display: inline-block;
+  text-align: center;
+  border-radius: 2px;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 10px 16px;
+  margin-top: 30px;
+}
+main .btn-secondary:hover, main .btn-secondary:focus {
+  background-color: #FFFFFF;
+  color: #470028;
+  border: 2px solid #FFFFFF;
+  text-decoration: none;
+  outline: 3px solid #343434;
 }
 main .cta {
   padding-bottom: 60px;
