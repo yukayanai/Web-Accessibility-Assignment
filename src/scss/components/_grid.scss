@@ -44,6 +44,22 @@ footer {
 
 @media only screen and (min-width: 992px) {
     /* Grid for desktop */
+    main {
+        .grid-container-donate {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 75% 25%;
+            grid-gap: 30px;
+            padding-bottom: 50px;
+    
+            div {
+                position: relative;
+                display: block;
+            }
+        }
+    }
+
     footer {
         .contact {
             grid-template-columns: 50% 25% 25%;
@@ -56,6 +72,16 @@ footer {
 
 @media only screen and (max-width: 992px) {
     /* Grid for tablets */
+    main {
+        .grid-container-donate {
+            max-width: 100%;
+    
+            div {
+                padding-bottom: 20px;
+                margin: 0 20px;
+            }
+        }
+    }
     footer {
         .contact {
             grid-template-columns: 100%;

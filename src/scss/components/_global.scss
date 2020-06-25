@@ -135,11 +135,10 @@ footer {
     }
 
     a {
-        text-decoration: none;
         color: $white;
         
         &:hover {
-            text-decoration: underline;
+            color: $secondary-color5;
         }
 
         &:focus {
@@ -169,7 +168,7 @@ footer {
                     a {
                         &:hover, &:focus {
                             i {
-                                color: $grey;
+                                color: $secondary-color5;
                             }
                         }
                     }
@@ -198,6 +197,17 @@ main {
     #bg-help, #bg-blog {
         background-image: url("../img/Plumtree-bg-image.jpg");
     }
+
+    #innov {
+        background-color: $primary-colour;
+        
+        .container {
+            h2, p {
+                color: $white;
+            }
+        }
+    }
+
     article {
         background-color: $white;
         padding: 0 20px 30px 20px;
@@ -217,8 +227,13 @@ main {
             padding: 0.6em;
             background-color: $secondary-colour2;
             border-radius: 0.6em;
-            text-decoration: none;
+            text-decoration: none !important;
             color: $white;
+
+            &:hover, &:focus {
+                background-color: $secondary-colour3;
+                color: $white !important;
+            }
         }
         .author {
             margin-top: 20px;
@@ -253,7 +268,51 @@ main {
     .sitemap, .copyright, .contact {
         margin-bottom: 20px;
     }
+
+    #bg-blog {
+        article {
+            p {
+                a {
+                    text-decoration: underline;
+
+                    &:hover {
+                        color: $secondary-colour1;
+                    }
+                }
+            }
+        }
+    }
+
+    #bg-help {
+        article {
+            padding: 20px 20px 0 20px;
+            text-align: center;
+
+            img {
+                height: 120px;
+            }
+        }
+    }
     
+    #getinvolved {
+        h3 {
+            font-size: 1.4em;
+        }
+        .getinvolved-info {
+            .cta {
+                margin: 0;
+            }
+        }
+        .getinvolved-image {
+            text-align: center;
+
+            img {
+                height: 250px;
+                padding: 20px 0;
+            }
+        }
+    }
+
     // Screen reader only
     .sr-only {
         border: 0;
@@ -294,7 +353,11 @@ main {
             color: $secondary-colour3;
             border: 2px solid $secondary-colour3;
             text-decoration: none;
+        }
+
+        &:focus {
             outline: 3px solid $focus-blue;
+            outline-offset: 4px;
         }
     }
 
@@ -309,18 +372,47 @@ main {
         white-space: nowrap;
         vertical-align: middle;
         padding: 10px 16px;
-        margin-top: 30px;
 
         &:hover, &:focus {
             background-color: $white;
             color: $secondary-colour3;
             border: 2px solid $white;
             text-decoration: none;
+        }
+
+        &:focus {
             outline: 3px solid $black;
+            outline-offset: 4px;
         }
     }
+
+    .btn-tertiary {
+        background-color: $white;
+        border: 2px solid $primary-colour;
+        color: $primary-colour;
+        font-size: 1.15em;
+        display: inline-block;
+        text-align: center;
+        border-radius: 2px;
+        white-space: nowrap;
+        vertical-align: middle;
+        padding: 10px 16px;
+
+        &:hover, &:focus {
+            background-color: $primary-colour;
+            color: $white;
+            border: 2px solid $primary-colour;
+            text-decoration: none;
+        }
+
+        &:focus {
+            outline: 3px solid $focus-blue;
+            outline-offset: 4px;
+        }
+    }
+
     .cta {
-        padding-bottom: 60px;
+        padding-bottom: 50px;
     }
     .wrapper {
         max-width: 1200px;
@@ -348,6 +440,7 @@ main {
             border: 1px solid $grey;
             padding: 40px 20px;
             width: 60%;
+            max-width: 1200px;
             margin: 0 auto;
             z-index: 1;
             text-align: center;
@@ -362,16 +455,21 @@ main {
         .alert {
             background-color: $primary-colour;
             width: 60%;
+            max-width: 1200px;
             margin: 0 auto;
             text-align: center;
-            padding: 10px 0 1px 0;
-            
-            a {
-                color: $white;
 
-                &:focus {
-                    outline: 3px solid $white;
-                    outline-offset: 4px;
+            p {
+                margin: 0;
+                padding: 10px 0 3px 0;
+
+                a {
+                    color: $white;
+    
+                    &:focus {
+                        outline: 3px solid $white;
+                        outline-offset: 4px;
+                    }
                 }
             }
         }
@@ -390,7 +488,14 @@ main {
     main {
         h2 {
             text-align: center;
-            padding: 50px 0 60px 0;
+            padding: 40px 0;
+        }
+        #innov {
+            .container {
+                width: 60%;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
         }
     }
     footer {
@@ -413,7 +518,7 @@ main {
         .wrapper {
             .logo {
                 a img {
-                    height: 80px;
+                    height: 60px;
                 }
             }
         }
@@ -442,10 +547,25 @@ main {
                 }
             }
         }
+        #innov {
+            padding-bottom: 20px;
+
+            .container {
+                width: 100%;
+                margin: 0px auto;
+    
+                p {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+
+
+            }
+        }
     }
 
     nav {
-        margin: 20px 0 0 0;
+        margin: 10px 0 0 0;
 
         .nav {
             display: none;
