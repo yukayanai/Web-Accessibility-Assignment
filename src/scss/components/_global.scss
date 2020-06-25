@@ -26,7 +26,7 @@ header {
             top: 0;
             left: 150%;
             width: 170px;
-            outline: solid 2px $primary-colour;
+            outline: solid 3px $primary-colour;
             padding: 4px;
             display: flex;
         }
@@ -182,6 +182,64 @@ footer {
 
 // Content
 main {
+    .welcome {
+        .bg-image {
+            padding: 140px 0;
+            
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+    #hero {
+        background-image: url("../img/Plumtree-hero-image.jpg");
+    }
+
+    #bg-help, #bg-blog {
+        background-image: url("../img/Plumtree-bg-image.jpg");
+    }
+    article {
+        background-color: $white;
+        padding: 0 20px 30px 20px;
+
+        h3 {
+            a {
+                text-decoration: none;
+                color: $primary-colour;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .topic-pill {
+            font-size: 0.875em;
+            padding: 0.6em;
+            background-color: $secondary-colour2;
+            border-radius: 0.6em;
+            text-decoration: none;
+            color: $white;
+        }
+        .author {
+            margin-top: 20px;
+        }
+    }
+    
+    .sitemap, .copyright, .contact {
+        margin-bottom: 20px;
+    }
+    
+    // Screen reader only
+    .sr-only {
+        border: 0;
+        clip: rect(0,0,0,0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
     a {
         text-decoration: none;
 
@@ -246,64 +304,31 @@ main {
             margin: 0 auto;
             z-index: 1;
             text-align: center;
+
+            h2 {
+                font-size: 1.28em;
+                padding: 15px 0 20px 0;
+                color: $black;
+            }
         }
-    }
 
-    .welcome {
-        .bg-image {
-            padding: 140px 0;
-        }
-    }
-    #hero {
-        background-image: url("../img/Plumtree-hero-image.jpg");
-    }
-
-    #bg-help, #bg-blog {
-        background-image: url("../img/Plumtree-bg-image.jpg");
-    }
-    article {
-        background-color: $white;
-        padding: 0 20px 30px 20px;
-
-        h3 {
+        .alert {
+            background-color: $primary-colour;
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px 0 1px 0;
+            
             a {
-                text-decoration: none;
-                color: $primary-colour;
-    
-                &:hover {
-                    text-decoration: underline;
+                color: $white;
+
+                &:focus {
+                    outline: 3px solid $white;
+                    outline-offset: 4px;
                 }
             }
         }
-        .topic-pill {
-            font-size: 0.875em;
-            padding: 0.6em;
-            background-color: $secondary-colour2;
-            border-radius: 0.6em;
-            text-decoration: none;
-            color: $white;
-        }
-        .author {
-            margin-top: 20px;
-        }
     }
-    
-    .sitemap, .copyright, .contact {
-        margin-bottom: 20px;
-    }
-    
-    // Screen reader only
-    .sr-only {
-        border: 0;
-        clip: rect(0,0,0,0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-    }
-    
 }
 
 /* Desktop */
@@ -354,12 +379,17 @@ main {
         }
         .welcome {
             .bg-image {
-                padding: 0;
+                padding: 20px;
     
                 .image-header {
                     background-color: $white;
                     border: none;
                     padding: 60px 40px;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                .alert {
                     width: 100%;
                     margin: 0 auto;
                 }

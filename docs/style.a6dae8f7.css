@@ -55,7 +55,7 @@ header #skip-link:focus {
   top: 0;
   left: 150%;
   width: 170px;
-  outline: solid 2px #9e005d;
+  outline: solid 3px #9e005d;
   padding: 4px;
   display: flex;
 }
@@ -164,6 +164,53 @@ footer .contact .connect ul li a:hover i, footer .contact .connect ul li a:focus
   color: #BFBFBF;
 }
 
+main .welcome .bg-image {
+  padding: 140px 0;
+}
+main .welcome .bg-image h2 {
+  text-align: center;
+}
+main #hero {
+  background-image: url("/Plumtree-hero-image.350f378d.jpg");
+}
+main #bg-help, main #bg-blog {
+  background-image: url("/Plumtree-bg-image.accd007a.jpg");
+}
+main article {
+  background-color: #FFFFFF;
+  padding: 0 20px 30px 20px;
+}
+main article h3 a {
+  text-decoration: none;
+  color: #9e005d;
+}
+main article h3 a:hover {
+  text-decoration: underline;
+}
+main article .topic-pill {
+  font-size: 0.875em;
+  padding: 0.6em;
+  background-color: #A62811;
+  border-radius: 0.6em;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+main article .author {
+  margin-top: 20px;
+}
+main .sitemap, main .copyright, main .contact {
+  margin-bottom: 20px;
+}
+main .sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
 main a {
   text-decoration: none;
 }
@@ -224,49 +271,24 @@ main .bg-image .image-header {
   z-index: 1;
   text-align: center;
 }
-main .welcome .bg-image {
-  padding: 140px 0;
+main .bg-image .image-header h2 {
+  font-size: 1.28em;
+  padding: 15px 0 20px 0;
+  color: #343434;
 }
-main #hero {
-  background-image: url("/Plumtree-hero-image.350f378d.jpg");
+main .bg-image .alert {
+  background-color: #9e005d;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0 1px 0;
 }
-main #bg-help, main #bg-blog {
-  background-image: url("/Plumtree-bg-image.accd007a.jpg");
-}
-main article {
-  background-color: #FFFFFF;
-  padding: 0 20px 30px 20px;
-}
-main article h3 a {
-  text-decoration: none;
-  color: #9e005d;
-}
-main article h3 a:hover {
-  text-decoration: underline;
-}
-main article .topic-pill {
-  font-size: 0.875em;
-  padding: 0.6em;
-  background-color: #A62811;
-  border-radius: 0.6em;
-  text-decoration: none;
+main .bg-image .alert a {
   color: #FFFFFF;
 }
-main article .author {
-  margin-top: 20px;
-}
-main .sitemap, main .copyright, main .contact {
-  margin-bottom: 20px;
-}
-main .sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+main .bg-image .alert a:focus {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 4px;
 }
 
 /* Desktop */
@@ -304,12 +326,16 @@ main .sr-only {
     padding: 30px 20px;
   }
   main .welcome .bg-image {
-    padding: 0;
+    padding: 20px;
   }
   main .welcome .bg-image .image-header {
     background-color: #FFFFFF;
     border: none;
     padding: 60px 40px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .welcome .bg-image .alert {
     width: 100%;
     margin: 0 auto;
   }
