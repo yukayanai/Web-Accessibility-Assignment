@@ -158,6 +158,12 @@ footer {
         }
     }
 
+    .sitemap {
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid $grey;
+    }
+
     .contact {
         .connect {
             ul {
@@ -188,6 +194,11 @@ main {
             h2 {
                 text-align: center;
             }
+
+            .slogan {
+                font-size: 1.4em;
+                font-weight: 700;
+            }
         }
     }
     #hero {
@@ -208,9 +219,24 @@ main {
         }
     }
 
+    #bg-blog {
+        text-align: center;
+
+        h3, p {
+            text-align: left !important;
+        }
+        img {
+            height: 220px;
+        }
+    }
+
     article {
         background-color: $white;
-        padding: 0 20px 30px 20px;
+        padding: 0 20px 10px 20px;
+
+        img {
+            text-align: center;
+        }
 
         h3 {
             a {
@@ -295,8 +321,10 @@ main {
     }
     
     #getinvolved {
-        h3 {
+        .emph {
             font-size: 1.4em;
+            color: $primary-colour;
+            font-weight: 700;
         }
         .getinvolved-info {
             .cta {

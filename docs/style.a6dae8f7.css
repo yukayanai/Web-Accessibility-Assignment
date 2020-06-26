@@ -154,6 +154,11 @@ footer ul li {
   margin: 0;
   padding: 0;
 }
+footer .sitemap {
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #BFBFBF;
+}
 footer .contact .connect ul li {
   display: inline;
   padding-right: 10px;
@@ -168,6 +173,10 @@ main .welcome .bg-image {
 main .welcome .bg-image h2 {
   text-align: center;
 }
+main .welcome .bg-image .slogan {
+  font-size: 1.4em;
+  font-weight: 700;
+}
 main #hero {
   background-image: url("/Plumtree-hero-image.350f378d.jpg");
 }
@@ -180,9 +189,21 @@ main #innov {
 main #innov .container h2, main #innov .container p {
   color: #FFFFFF;
 }
+main #bg-blog {
+  text-align: center;
+}
+main #bg-blog h3, main #bg-blog p {
+  text-align: left !important;
+}
+main #bg-blog img {
+  height: 220px;
+}
 main article {
   background-color: #FFFFFF;
-  padding: 0 20px 30px 20px;
+  padding: 0 20px 10px 20px;
+}
+main article img {
+  text-align: center;
 }
 main article h3 a {
   text-decoration: none;
@@ -241,8 +262,10 @@ main #bg-help article {
 main #bg-help article img {
   height: 120px;
 }
-main #getinvolved h3 {
+main #getinvolved .emph {
   font-size: 1.4em;
+  color: #9e005d;
+  font-weight: 700;
 }
 main #getinvolved .getinvolved-info .cta {
   margin: 0;
@@ -595,7 +618,7 @@ p {
 }
 
 ul li {
-  line-height: 1.5em;
+  line-height: 1.75em;
 }
 
 footer h2 {
