@@ -217,12 +217,7 @@ main article .topic-pill {
   padding: 0.6em;
   background-color: #DD3113;
   border-radius: 0.6em;
-  text-decoration: none !important;
   color: #FFFFFF;
-}
-main article .topic-pill:hover, main article .topic-pill:focus {
-  background-color: #470028;
-  color: #FFFFFF !important;
 }
 main article .author {
   margin-top: 20px;
@@ -409,7 +404,7 @@ main .bg-image .alert {
 }
 main .bg-image .alert p {
   margin: 0;
-  padding: 10px 0 3px 0;
+  padding: 10px 0 8px 0;
 }
 main .bg-image .alert p a {
   color: #FFFFFF;

@@ -253,13 +253,7 @@ main {
             padding: 0.6em;
             background-color: $secondary-colour2;
             border-radius: 0.6em;
-            text-decoration: none !important;
             color: $white;
-
-            &:hover, &:focus {
-                background-color: $secondary-colour3;
-                color: $white !important;
-            }
         }
         .author {
             margin-top: 20px;
