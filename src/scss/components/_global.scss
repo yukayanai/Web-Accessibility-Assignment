@@ -138,7 +138,7 @@ footer {
         color: $white;
         
         &:hover {
-            color: $secondary-color5;
+            color: $secondary-colour5;
         }
 
         &:focus {
@@ -174,7 +174,7 @@ footer {
                     a {
                         &:hover, &:focus {
                             i {
-                                color: $secondary-color5;
+                                color: $secondary-colour5;
                             }
                         }
                     }
@@ -249,11 +249,18 @@ main {
             }
         }
         .topic-pill {
-            font-size: 0.875em;
             padding: 0.6em;
-            background-color: $secondary-colour2;
-            border-radius: 0.6em;
+            font-size: 0.9em;
+            border-radius: 2px;
             color: $white;
+
+            &.house {
+                background-color: $secondary-colour4;
+            }
+
+            &.prof {
+                background-color: $secondary-colour2;
+            }
         }
         .author {
             margin-top: 20px;
@@ -261,7 +268,7 @@ main {
     }
 
     .explore-ph {
-        background-color: $secondary-color4;
+        background-color: $secondary-colour4;
     }
 
     .explore-pc {

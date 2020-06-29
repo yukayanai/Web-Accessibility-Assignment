@@ -213,11 +213,16 @@ main article h3 a:hover {
   text-decoration: underline;
 }
 main article .topic-pill {
-  font-size: 0.875em;
   padding: 0.6em;
-  background-color: #DD3113;
-  border-radius: 0.6em;
+  font-size: 0.9em;
+  border-radius: 2px;
   color: #FFFFFF;
+}
+main article .topic-pill.house {
+  background-color: #D21D84;
+}
+main article .topic-pill.prof {
+  background-color: #DD3113;
 }
 main article .author {
   margin-top: 20px;
