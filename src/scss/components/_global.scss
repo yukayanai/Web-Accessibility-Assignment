@@ -228,15 +228,6 @@ main {
         img {
             height: 220px;
         }
-
-        article {
-            &.ph {
-                border: 3px solid $secondary-colour4;
-            }
-            &.pp {
-                border: 3px solid $secondary-colour2;
-            }
-        }
     }
 
     article {
@@ -261,15 +252,7 @@ main {
             padding: 0.6em;
             font-size: 0.9em;
             border-radius: 2px;
-            color: $white;
-
-            &.house {
-                background-color: $secondary-colour4;
-            }
-
-            &.prof {
-                background-color: $secondary-colour2;
-            }
+            background-color: $topic-pill;
         }
         .author {
             margin-top: 20px;
@@ -382,7 +365,6 @@ main {
         display: inline-block;
         text-align: center;
         border-radius: 2px;
-        white-space: nowrap;
         vertical-align: middle;
         padding: 10px 16px;
 
@@ -407,7 +389,6 @@ main {
         display: inline-block;
         text-align: center;
         border-radius: 2px;
-        white-space: nowrap;
         vertical-align: middle;
         padding: 10px 16px;
 
@@ -432,7 +413,6 @@ main {
         display: inline-block;
         text-align: center;
         border-radius: 2px;
-        white-space: nowrap;
         vertical-align: middle;
         padding: 10px 16px;
 

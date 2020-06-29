@@ -198,12 +198,6 @@ main #bg-blog h3, main #bg-blog p {
 main #bg-blog img {
   height: 220px;
 }
-main #bg-blog article.ph {
-  border: 3px solid #D21D84;
-}
-main #bg-blog article.pp {
-  border: 3px solid #DD3113;
-}
 main article {
   background-color: #FFFFFF;
   padding: 0 20px 10px 20px;
@@ -222,13 +216,7 @@ main article .topic-pill {
   padding: 0.6em;
   font-size: 0.9em;
   border-radius: 2px;
-  color: #FFFFFF;
-}
-main article .topic-pill.house {
-  background-color: #D21D84;
-}
-main article .topic-pill.prof {
-  background-color: #DD3113;
+  background-color: #EFEFEF;
 }
 main article .author {
   margin-top: 20px;
@@ -311,7 +299,6 @@ main .btn-primary {
   display: inline-block;
   text-align: center;
   border-radius: 2px;
-  white-space: nowrap;
   vertical-align: middle;
   padding: 10px 16px;
 }
@@ -333,7 +320,6 @@ main .btn-secondary {
   display: inline-block;
   text-align: center;
   border-radius: 2px;
-  white-space: nowrap;
   vertical-align: middle;
   padding: 10px 16px;
 }
@@ -355,7 +341,6 @@ main .btn-tertiary {
   display: inline-block;
   text-align: center;
   border-radius: 2px;
-  white-space: nowrap;
   vertical-align: middle;
   padding: 10px 16px;
 }
