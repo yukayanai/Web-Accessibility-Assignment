@@ -8,6 +8,7 @@ html {
 
 * {
   box-sizing: border-box;
+  font-size: 32px;
 }
 
 body {
@@ -123,6 +124,7 @@ nav .list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 footer {
@@ -216,7 +218,6 @@ main article .topic-pill {
   padding: 0.6em;
   font-size: 0.9em;
   border-radius: 2px;
-  background-color: #EFEFEF;
 }
 main article .author {
   margin-top: 20px;

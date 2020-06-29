@@ -118,6 +118,7 @@ nav {
         margin: 0;
         padding: 0;
         list-style: none;
+        flex-wrap: wrap;
     }
 }
 
@@ -252,7 +253,6 @@ main {
             padding: 0.6em;
             font-size: 0.9em;
             border-radius: 2px;
-            background-color: $topic-pill;
         }
         .author {
             margin-top: 20px;
