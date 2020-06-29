@@ -228,6 +228,15 @@ main {
         img {
             height: 220px;
         }
+
+        article {
+            &.ph {
+                border: 3px solid $secondary-colour4;
+            }
+            &.pp {
+                border: 3px solid $secondary-colour2;
+            }
+        }
     }
 
     article {

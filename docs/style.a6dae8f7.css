@@ -198,6 +198,12 @@ main #bg-blog h3, main #bg-blog p {
 main #bg-blog img {
   height: 220px;
 }
+main #bg-blog article.ph {
+  border: 3px solid #D21D84;
+}
+main #bg-blog article.pp {
+  border: 3px solid #DD3113;
+}
 main article {
   background-color: #FFFFFF;
   padding: 0 20px 10px 20px;
