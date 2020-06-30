@@ -66,6 +66,13 @@ nav #hamburger {
   border: none;
   padding: 3px 6px 2px 6px;
 }
+nav #hamburger:focus {
+  outline: solid 3px #005FCC;
+  outline-offset: 4px;
+}
+nav #hamburger:hover {
+  background-color: #470028;
+}
 nav .nav {
   margin: 20px 0 0 0;
   display: flex;
