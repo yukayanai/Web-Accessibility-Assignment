@@ -37,6 +37,19 @@ h6 {
     font-size: 1.15rem;
 }
 
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+    h2 {
+        font-size: 1.9rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
 // Text styles
 
 p {
