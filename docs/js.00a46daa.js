@@ -195,6 +195,23 @@ module.hot.accept(reloadCSS);
 require("@fortawesome/fontawesome-free/css/all.css");
 
 console.log('parcel works');
+document.addEventListener('DOMContentLoaded', function (event) {
+  var $ = function $(selector) {
+    var $parent = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : document;
+    return $parent.querySelector(selector);
+  };
+
+  var $$ = function $$(selector) {
+    var $parent = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : document;
+    return Array.prototype.slice.call($parent.querySelectorAll(selector));
+  };
+
+  var $hamburger = $('#hamburger');
+  var $navDialog = $('#nav-dialog');
+  $hamburger.addEventListener('click', function (e) {
+    $navDialog.classList.add('open');
+  });
+});
 },{"@fortawesome/fontawesome-free/css/all.css":"../node_modules/@fortawesome/fontawesome-free/css/all.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
