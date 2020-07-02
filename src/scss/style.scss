@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 // Reset
-@import "components/normalise";
+@import 'components/normalise';
 
 // Colour
-@import "components/colour";
+@import 'components/colour';
 
 // Global
-@import "components/global";
+@import 'components/global';
 
 // Components
-@import "components/grid";
-@import "components/typography";
+@import 'components/grid';
+@import 'components/typography';

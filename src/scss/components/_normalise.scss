@@ -1,17 +1,17 @@
 html {
-    line-height: 1.15;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-  }
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+}
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 article,
@@ -20,14 +20,15 @@ header,
 main,
 nav,
 section {
-  display: block;
+	display: block;
 }
 
-header, .footer-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
+header,
+.footer-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 footer {
-  padding: 20px;
+	padding: 20px;
 }
