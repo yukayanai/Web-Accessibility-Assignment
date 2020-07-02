@@ -1,0 +1,121 @@
+// Navigation
+nav {
+	@include mq($mq-desktop) {
+		margin: 40px 0;
+	}
+
+	@include mq($mq-tablet) {
+		margin: 10px 0 0 0;
+	}
+
+	#hamburger {
+		color: $white;
+		background-color: $primary-colour;
+		border: none;
+		padding: 4px 6px 6px 6px;
+
+		@include mq($mq-desktop) {
+			margin: 40px 0;
+		}
+
+		@include mq($mq-tablet) {
+			display: initial;
+		}
+
+		i {
+			font-size: 2rem;
+			vertical-align: middle;
+		}
+
+		&:focus {
+			outline: solid 3px $focus-blue;
+			outline-offset: 4px;
+		}
+
+		&:hover {
+			background-color: $secondary-colour3;
+		}
+	}
+
+	.nav {
+		margin: 20px 0 0 0;
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.18em;
+		font-weight: 700;
+
+		@include mq($mq-tablet) {
+			display: none;
+		}
+
+		li {
+			float: left;
+
+			i {
+				font-size: 0.85em;
+				padding-left: 6px;
+			}
+
+			> a {
+				padding: 10px 15px;
+				text-decoration: none;
+				color: $black;
+
+				&:hover,
+				&:focus {
+					background: $primary-colour;
+					color: $white;
+					outline: 0;
+				}
+			}
+
+			&:hover,
+			&:focus {
+				> a {
+					background: $primary-colour;
+					color: $white;
+					outline: 0;
+				}
+
+				ul {
+					left: 0;
+					opacity: 0.99;
+				}
+			}
+
+			ul {
+				&.show-menu {
+					left: 0;
+					opacity: 0.99;
+				}
+
+				li {
+					float: none;
+					position: static;
+					background-color: $light-grey;
+				}
+
+				a {
+					float: none;
+					display: block;
+					text-shadow: none;
+					transition: 0.1s linear all;
+
+					&:hover,
+					&:focus {
+						text-shadow: none;
+					}
+				}
+			}
+		}
+	}
+
+	.list-reset {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		flex-wrap: wrap;
+	}
+}
