@@ -147,7 +147,7 @@ footer a {
   color: #FFFFFF;
 }
 footer a:hover {
-  color: #F69584;
+  color: #F9B2A9;
 }
 footer a:focus {
   outline: 3px solid #FFFFFF;
@@ -172,7 +172,7 @@ footer .contact .connect ul li {
   padding-right: 10px;
 }
 footer .contact .connect ul li a:hover i, footer .contact .connect ul li a:focus i {
-  color: #F69584;
+  color: #F9B2A9;
 }
 
 main .welcome .bg-image {
@@ -412,6 +412,10 @@ main .bg-image .alert p {
 }
 main .bg-image .alert p a {
   color: #FFFFFF;
+  text-decoration: underline;
+}
+main .bg-image .alert p a:hover {
+  color: #F9B2A9;
 }
 main .bg-image .alert p a:focus {
   outline: 3px solid #FFFFFF;

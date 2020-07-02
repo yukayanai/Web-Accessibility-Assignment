@@ -493,6 +493,11 @@ main {
 
                 a {
                     color: $white;
+                    text-decoration: underline;
+
+                    &:hover {
+                        color: $secondary-colour5;
+                    }
     
                     &:focus {
                         outline: 3px solid $white;
