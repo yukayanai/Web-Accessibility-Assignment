@@ -1,0 +1,71 @@
+// Footer
+footer {
+	background-color: $secondary-colour3;
+	width: 100%;
+
+	> * {
+		color: $white;
+	}
+
+	p,
+	h2 {
+		color: $white;
+	}
+
+	a {
+		color: $white;
+
+		&:hover {
+			color: $secondary-colour5;
+		}
+
+		&:focus {
+			outline: 3px solid $white;
+			outline-offset: 4px;
+		}
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+
+		li {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.sitemap {
+		padding-bottom: 30px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid $grey;
+	}
+
+	.contact {
+		.connect {
+			ul {
+				li {
+					display: inline;
+					padding-right: 10px;
+
+					a {
+						&:hover,
+						&:focus {
+							i {
+								color: $secondary-colour5;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.copyright {
+		.pull-right {
+			@include mq($mq-desktop) {
+				text-align: right;
+			}
+		}
+	}
+}

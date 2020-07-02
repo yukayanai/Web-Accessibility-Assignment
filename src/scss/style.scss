@@ -1,14 +1,22 @@
 @charset "UTF-8";
 
-// Reset
-@import "components/normalise";
+// variables
+@import 'variables/breakpoints';
+@import 'variables/colour';
 
-// Colour
-@import "components/colour";
+// mixins
+@import 'mq-scss/mq'; // media query mixin
+
+// Reset
+@import 'components/normalise';
 
 // Global
-@import "components/global";
+@import 'components/global';
+@import 'components/header';
+@import 'components/nav';
+@import 'components/content';
+@import 'components/footer';
 
 // Components
-@import "components/grid";
-@import "components/typography";
+@import 'components/grid';
+@import 'components/typography';

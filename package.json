@@ -23,5 +23,9 @@
     "cssnano": "^4.1.10",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.26.8"
+  },
+  "dependencies": {
+    "focus-trap": "^5.1.0",
+    "mq-scss": "^2.1.5"
   }
 }
