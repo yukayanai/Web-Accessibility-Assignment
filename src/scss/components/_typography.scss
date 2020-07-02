@@ -1,92 +1,87 @@
 * {
-	word-spacing: 0.01em;
-	letter-spacing: 0.02em;
+    word-spacing: 0.01em;
+    letter-spacing: 0.02em;;
 }
 
 // Header Styles
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
-	line-height: 1.3em;
-	color: $primary-colour;
+    line-height: 1.3em;
+    color: $primary-colour;
 }
 
 h1 {
-	font-size: 2.85rem;
-	margin: 0;
+    font-size: 2.85rem;
+    margin: 0;
 }
 
 h2 {
-	font-size: 2.25rem;
-	margin: 0;
+    font-size: 2.25rem;
+    margin: 0;
 }
 
 h3 {
-	font-size: 1.85rem;
+    font-size: 1.85rem;
 }
 
 h4 {
-	font-size: 1.65rem;
+    font-size: 1.65rem;
 }
 
 h5 {
-	font-size: 1.35rem;
+    font-size: 1.35rem;
 }
 
 h6 {
-	font-size: 1.15rem;
+    font-size: 1.15rem;
 }
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
-	h1 {
-		font-size: 2.3rem;
-	}
-	h2 {
-		font-size: 1.9rem;
-	}
-	h3 {
-		font-size: 1.5rem;
-	}
+    h1 {
+        font-size: 2.3rem;
+    }
+    h2 {
+        font-size: 1.9rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
 }
 
 // Text styles
 
 p {
-	color: $black;
-	font-size: 1em;
-	margin-bottom: 2em;
-	line-height: 1.5em;
+    color: $black;
+    font-size: 1em;
+    margin-bottom: 2em;
+    line-height: 1.5em;
 }
 
 ul {
-	li {
-		line-height: 1.75em;
-	}
+    li {
+        line-height: 1.75em;
+    }
 }
 
 footer {
-	h2 {
-		margin: 25px 0;
-		font-size: 1.25em;
+    h2 {
+        margin: 25px 0;
+        font-size: 1.25em;
 
-		a {
-			text-decoration: none;
-		}
-	}
+        a {
+            text-decoration: none;
+        }
+    }
 
-	p {
-		margin: 16px 0 0 0;
-	}
+    p {
+        margin: 16px 0 0 0;
+    }
 
-	.connect {
-		i {
-			font-size: 2.4em;
-		}
-	}
+    .connect {
+        i {
+            font-size: 2.4em;
+        }
+    }
 }
