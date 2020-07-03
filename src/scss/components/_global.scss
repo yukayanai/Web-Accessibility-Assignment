@@ -274,6 +274,18 @@ main {
         }
     }
 
+    .what-we-do.grid-container {
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .cta {
+                margin-top: auto;
+            }
+        }
+    }
+
     .explore-ph {
         background-color: $secondary-colour4;
     }
