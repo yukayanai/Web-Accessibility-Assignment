@@ -233,6 +233,14 @@ main article .topic-pill {
 main article .author {
   margin-top: 20px;
 }
+main .what-we-do.grid-container article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .what-we-do.grid-container article .cta {
+  margin-top: auto;
+}
 main .explore-ph {
   background-color: #D21D84;
 }
