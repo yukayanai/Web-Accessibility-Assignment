@@ -454,8 +454,8 @@ main .bg-image .alert p a:focus {
   header {
     margin-top: 0;
   }
-  header #skip-link {
-    display: none;
+  header #skip-link:focus {
+    left: 60%;
   }
   header .wrapper .logo a img {
     height: 60px;

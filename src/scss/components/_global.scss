@@ -551,7 +551,9 @@ main {
         margin-top: 0;
 
         #skip-link {
-            display:none;
+            &:focus {
+                left: 60%;
+            }
         }
         .wrapper {
             .logo {
