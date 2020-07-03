@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/index.js"],"names":["console","log"],"mappings":";;;AAAA,aAEA,QAAA,6CAFAA,QAAQC,IAAI","file":"js.413e01a1.js","sourceRoot":"..\\src","sourcesContent":["console.log('parcel works')\r\n\r\nimport '@fortawesome/fontawesome-free/css/all.css'\r\n"]}
