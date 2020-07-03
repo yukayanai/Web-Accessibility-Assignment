@@ -426,6 +426,10 @@ main .bg-image .alert p a:focus {
   outline-offset: 4px;
 }
 
+footer address {
+  font-style: normal;
+}
+
 /* Desktop */
 @media only screen and (min-width: 992px) {
   nav {
